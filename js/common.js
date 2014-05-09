@@ -1,3 +1,3 @@
 head.ready(function() {
-	console.log($('body').html());
+	console.log("These aren't the droids you're looking for!");
 });
