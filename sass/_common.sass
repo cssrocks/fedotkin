@@ -4,6 +4,7 @@ body
 	line-height: $line-height-base
 	color: $text-color
 	background-color: $body-bg
+	min-width: 970px
 	padding-top: 52px // padding for fixed navbar
 
 ul,
@@ -13,9 +14,9 @@ ol
 	padding: 0
 
 .header
-	background: url('../img/pttrn.jpg') no-repeat
+	background: #f48820 url(../img/pttrn.jpg)
+	overflow: hidden
 	+cover
-	// +gh(#f1bb33, #f48820)
 	.h1
 		margin-bottom: 20px
 	.container
@@ -29,7 +30,7 @@ ol
 		right: -100px
 		width: 720px
 		height: 520px
-		background: url('../img/person.png') no-repeat 0 0
+		background: url(../img/person.png) no-repeat 0 0
 
 .intro
 	position: relative
@@ -65,7 +66,7 @@ ol
 
 .section
 	&.request
-		background: url('../img/pttrn.jpg') no-repeat
+		background: url(../img/pttrn.jpg) no-repeat
 		+cover
 		margin-top: -1px
 		> .container
@@ -209,7 +210,7 @@ ol
 		bottom: -35px
 		width: 112px
 		height: 208px
-		background: url('../img/bonus_bg.png') no-repeat
+		background: url(../img/person_sm.png) no-repeat
 		content: ""
 	.h2
 		margin-bottom: 20px
