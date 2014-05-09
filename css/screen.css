@@ -1418,9 +1418,9 @@ body { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; fo
 ul, ol { list-style-type: none; margin: 0; padding: 0; }
 
 .header { background: #f48820 url(../img/pttrn.jpg); overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.header > .container { position: relative; padding-top: 60px; padding-bottom: 35px; min-height: 520px; }
+.header > .container:before { position: absolute; bottom: 0; right: -100px; width: 720px; height: 520px; background: url(../img/person.png) no-repeat 0 0; }
 .header .h1 { margin-bottom: 20px; }
-.header .container { position: relative; padding-top: 60px; padding-bottom: 35px; min-height: 520px; }
-.header .header__person { position: absolute; bottom: 0; right: -100px; width: 720px; height: 520px; background: url(../img/person.png) no-repeat 0 0; }
 
 .intro { position: relative; margin-right: 170px; font-size: 20px; }
 .intro .lead { font-family: "Bitter Italic", "Times New Roman", Times, serif; }
@@ -1428,15 +1428,15 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .footer { margin: 20px 0; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 300; }
 .footer .h3 { margin-bottom: 15px; font-size: 18px; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; }
 .footer .footer__share { padding-top: 20px; margin-top: 20px; border-top: 1px solid #868686; }
-.footer .footer__share .footer__share-title { display: inline-block; margin-right: 10px; }
+.footer .footer__share-title { display: inline-block; margin-right: 10px; }
 .footer .footer__telnum { display: block; font-size: 30px; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; }
 
+.section > .container { padding-top: 45px; padding-bottom: 45px; border-bottom: 1px solid #5e5e5e; }
 .section.request { background: url(../img/pttrn.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; margin-top: -1px; }
 .section.request > .container { border: none; }
-.section > .container { padding-top: 45px; padding-bottom: 45px; border-bottom: 1px solid #5e5e5e; }
 
 .about .about__quote { position: relative; font-weight: 300; font-style: italic; border: 3px solid #c9c9c9; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; padding: 20px 18px; }
-.about .about__quote:before { position: absolute; top: 35px; left: 100%; background: url('../img/icons-sb4ce5d2656.png') 0 -642px no-repeat; width: 25px; height: 29px; content: ""; }
+.about .about__quote:before { position: absolute; top: 35px; left: 100%; content: ""; background: url('../img/icons-sb4ce5d2656.png') 0 -642px no-repeat; width: 25px; height: 29px; }
 .about .about__quote p.last { margin: 0; }
 .about .about__author { padding-top: 10px; }
 .about .about__authorinfo { *zoom: 1; margin-bottom: 15px; }
@@ -1480,8 +1480,8 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .bonus p { margin-bottom: 0; }
 .bonus p strong { display: block; }
 
-.gift { position: relative; padding: 30px 40px 30px 130px; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; min-height: 105px; }
-.gift:before { position: absolute; top: 50%; content: ""; }
-.gift._1:before { background: url('../img/icons-sb4ce5d2656.png') 0 -332px no-repeat; width: 77px; height: 60px; left: 25px; margin-top: -30px; }
-.gift._2:before { background: url('../img/icons-sb4ce5d2656.png') 0 -174px no-repeat; width: 59px; height: 55px; left: 32px; margin-top: -28px; }
-.gift p { margin-bottom: 0; }
+.gifts .gifts__i { position: relative; padding: 30px 40px 30px 130px; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; min-height: 105px; }
+.gifts .gifts__i:before { position: absolute; top: 50%; content: ""; }
+.gifts .gifts__i._1:before { background: url('../img/icons-sb4ce5d2656.png') 0 -332px no-repeat; width: 77px; height: 60px; left: 25px; margin-top: -30px; }
+.gifts .gifts__i._2:before { background: url('../img/icons-sb4ce5d2656.png') 0 -174px no-repeat; width: 59px; height: 55px; left: 32px; margin-top: -28px; }
+.gifts .gifts__i p { margin-bottom: 0; }

@@ -7,30 +7,33 @@ body
 	min-width: 970px
 	padding-top: 52px // padding for fixed navbar
 
+// reset
 ul,
 ol
 	list-style-type: none
 	margin: 0
 	padding: 0
 
+// Header
+// --------------------------------------------------
 .header
 	background: #f48820 url(../img/pttrn.jpg)
 	overflow: hidden
 	+cover
-	.h1
-		margin-bottom: 20px
-	.container
+	> .container
 		position: relative
 		padding-top: 60px
 		padding-bottom: 35px
 		min-height: 520px
-	.header__person
-		position: absolute
-		bottom: 0
-		right: -100px
-		width: 720px
-		height: 520px
-		background: url(../img/person.png) no-repeat 0 0
+		&:before
+			position: absolute
+			bottom: 0
+			right: -100px
+			width: 720px
+			height: 520px
+			background: url(../img/person.png) no-repeat 0 0
+	.h1
+		margin-bottom: 20px
 
 .intro
 	position: relative
@@ -39,6 +42,8 @@ ol
 	.lead
 		font-family: $font-family-bi
 
+// Footer
+// --------------------------------------------------
 .footer
 	margin: 20px 0
 	font-family: $font-family-base
@@ -53,29 +58,31 @@ ol
 		padding-top: 20px
 		margin-top: 20px
 		border-top: 1px solid #868686
-	.footer__share
-		.footer__share-title
-			display: inline-block
-			margin-right: 10px
-	.footer__tel
+	.footer__share-title
+		display: inline-block
+		margin-right: 10px
 	.footer__telnum
 		display: block
 		font-size: 30px
 		font-family: $font-family-base
 		font-weight: 500
 
+// Common blocks
+// --------------------------------------------------
 .section
+	> .container
+		padding-top: 45px
+		padding-bottom: 45px
+		border-bottom: 1px solid #5e5e5e
 	&.request
 		background: url(../img/pttrn.jpg) no-repeat
 		+cover
 		margin-top: -1px
 		> .container
 			border: none
-	> .container
-		padding-top: 45px
-		padding-bottom: 45px
-		border-bottom: 1px solid #5e5e5e
 
+// About
+// --------------------------------------------------
 .about
 	.about__quote
 		position: relative
@@ -88,8 +95,8 @@ ol
 			position: absolute
 			top: 35px
 			left: 100%
-			+s(quote_arr)
 			content: ""
+			+s(quote_arr)
 		p
 			&.last
 				margin: 0
@@ -114,6 +121,7 @@ ol
 		p
 			margin-bottom: 0
 
+// Why
 .why
 	position: relative
 	margin-top: 50px
@@ -126,6 +134,8 @@ ol
 		content: ""
 		+s(why)
 
+// Skills
+// --------------------------------------------------
 .skills
 	text-align: center
 	.skills__i
@@ -151,6 +161,8 @@ ol
 				+s(skill_4)
 		p
 			margin-bottom: 0
+
+// Video
 .video
 	position: relative
 	margin-top: 50px
@@ -168,6 +180,8 @@ ol
 		margin-left: -58px
 		z-index: 1
 
+// Testimonials
+// --------------------------------------------------
 .testimonials
 	.testimonials__moar
 		text-align: center
@@ -195,6 +209,9 @@ ol
 		display: inline-block
 		vertical-align: middle
 
+// Request
+// --------------------------------------------------
+// Bonus
 .bonus
 	position: relative
 	background: #ffb43e
@@ -219,27 +236,29 @@ ol
 		strong
 			display: block
 
-.gift
-	position: relative
-	padding: 30px 40px 30px 130px
-	+box-shadow(0 0 10px rgba(#000,.3))
-	+border-radius(10px)
-	min-height: 105px
-	&:before
-		position: absolute
-		top: 50%
-		content: ""
-	&._1
+// Gifts
+// --------------------------------------------------
+.gifts
+	.gifts__i
+		position: relative
+		padding: 30px 40px 30px 130px
+		+box-shadow(0 0 10px rgba(#000,.3))
+		+border-radius(10px)
+		min-height: 105px
 		&:before
-			+s(gift_1)
-			left: 25px
-			margin-top: -30px
-	&._2
-		&:before
-			+s(gift_2)
-			left: 32px
-			margin-top: -28px
-
-	p
-		margin-bottom: 0
+			position: absolute
+			top: 50%
+			content: ""
+		&._1
+			&:before
+				+s(gift_1)
+				left: 25px
+				margin-top: -30px
+		&._2
+			&:before
+				+s(gift_2)
+				left: 32px
+				margin-top: -28px
+		p
+			margin-bottom: 0
 
