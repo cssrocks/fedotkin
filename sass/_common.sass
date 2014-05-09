@@ -4,4 +4,88 @@ body
 	line-height: $line-height-base
 	color: $text-color
 	background-color: $body-bg
+	padding-top: 52px // padding for fixed navbar
+
+.header
+	background: url('../img/head_bg.jpg') no-repeat
+	+cover
+	// +gh(#f1bb33, #f48820)
+	.container
+		position: relative
+		padding-top: 60px
+		padding-bottom: 35px
+		min-height: 520px
+	.header__person
+		position: absolute
+		bottom: 0
+		right: -100px
+		width: 720px
+		height: 520px
+		background: url('../img/person.png') no-repeat 0 0
+	.header__content
+		position: relative
+		margin-right: 170px
+		font-size: 20px
+	.lead
+		font-family: $font-family-bi
+
+.about
+	.about__quote
+		font-weight: 300
+		font-style: italic
+	.about__author
+	.about__authorinfo
+		+clr
+	.about__authorpic
+		width: 100px
+		float: left
+		margin-right: 20px
+		img
+			display: block
+	.about__authormeta
+		overflow: hidden
+		h3
+		p
+
+.video
+	position: relative
+	.video__viewport
+		img
+			display: block
+			+border-radius(25px)
+	.video__play
+		+s(play)
+		cursor: pointer
+		position: absolute
+		top: 50%
+		margin-top: -41px
+		left: 50%
+		margin-left: -58px
+		z-index: 1
+
+.testimonial
+	margin-bottom: 70px
+	p
+		font-weight: 300
+		strong
+			font-weight: 500
+	.testimonial__author
+		+clr
+		margin-top: 20px
+		font-weight: 400
+	.testimonial__authorpic
+		display: inline-block
+		vertical-align: middle
+		width: 60px
+		margin-right: 20px
+		img
+			width: 60px
+			height: 60px
+			display: block
+	.testimonial__authorname
+		display: inline-block
+		vertical-align: middle
+
+
+
 
