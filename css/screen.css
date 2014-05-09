@@ -135,7 +135,7 @@ hr { margin-top: 25px; margin-bottom: 25px; border: 0; border-top: 1px solid #ee
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Bitter Regular", "Times New Roman", Times, serif; font-weight: normal; line-height: 1.1; color: inherit; }
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small { font-weight: normal; line-height: 1; color: #999999; }
 
-h1, .h1, h2, .h2, h3, .h3 { margin-top: 0; margin-bottom: 12.5px; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top: 0; margin-bottom: 30px; }
 h1 small, h1 .small, .h1 small, .h1 .small, h2 small, h2 .small, .h2 small, .h2 .small, h3 small, h3 .small, .h3 small, .h3 .small { font-size: 65%; }
 
 h4, .h4, h5, .h5, h6, .h6 { margin-bottom: 12.5px; }
@@ -1417,12 +1417,19 @@ body { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; fo
 ul, ol { list-style-type: none; margin: 0; padding: 0; }
 
 .header { background: url("../img/head_bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.header .h1 { margin-bottom: 20px; }
 .header .container { position: relative; padding-top: 60px; padding-bottom: 35px; min-height: 520px; }
 .header .header__person { position: absolute; bottom: 0; right: -100px; width: 720px; height: 520px; background: url("../img/person.png") no-repeat 0 0; }
 .header .header__content { position: relative; margin-right: 170px; font-size: 20px; }
 .header .lead { font-family: "Bitter Italic", "Times New Roman", Times, serif; }
 
-.about .about__quote { font-weight: 300; font-style: italic; }
+.section > .container { padding-top: 45px; padding-bottom: 45px; border-bottom: 1px solid #5e5e5e; }
+
+.about { margin-bottom: 55px; }
+.about .about__quote { position: relative; font-weight: 300; font-style: italic; border: 3px solid #c9c9c9; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; padding: 20px 18px; }
+.about .about__quote:before { position: absolute; top: 35px; left: 100%; background: url('../img/icons-s7d8fa82bdd.png') 0 -138px no-repeat; width: 25px; height: 29px; content: ""; }
+.about .about__quote p.last { margin: 0; }
+.about .about__author { padding-top: 10px; }
 .about .about__authorinfo { *zoom: 1; }
 .about .about__authorinfo:after { content: " "; display: table; clear: both; }
 .about .about__authorpic { width: 100px; float: left; margin-right: 20px; }
@@ -1431,7 +1438,7 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 
 .video { position: relative; }
 .video .video__viewport img { display: block; -webkit-border-radius: 25px; -moz-border-radius: 25px; -ms-border-radius: 25px; -o-border-radius: 25px; border-radius: 25px; }
-.video .video__play { background: url('../img/icons-s7825445e39.png') 0 0 no-repeat; width: 117px; height: 83px; cursor: pointer; position: absolute; top: 50%; margin-top: -41px; left: 50%; margin-left: -58px; z-index: 1; }
+.video .video__play { background: url('../img/icons-s7d8fa82bdd.png') 0 0 no-repeat; width: 117px; height: 83px; cursor: pointer; position: absolute; top: 50%; margin-top: -41px; left: 50%; margin-left: -58px; z-index: 1; }
 
 .testimonial { margin-bottom: 70px; }
 .testimonial p { font-weight: 300; }

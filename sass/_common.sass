@@ -16,6 +16,8 @@ ol
 	background: url('../img/head_bg.jpg') no-repeat
 	+cover
 	// +gh(#f1bb33, #f48820)
+	.h1
+		margin-bottom: 20px
 	.container
 		position: relative
 		padding-top: 60px
@@ -35,11 +37,32 @@ ol
 	.lead
 		font-family: $font-family-bi
 
+.section
+	> .container
+		padding-top: 45px
+		padding-bottom: 45px
+		border-bottom: 1px solid #5e5e5e
+
 .about
+	margin-bottom: 55px
 	.about__quote
+		position: relative
 		font-weight: 300
 		font-style: italic
+		border: 3px solid #c9c9c9
+		+border-radius(10px)
+		padding: 20px 18px
+		&:before
+			position: absolute
+			top: 35px
+			left: 100%
+			+s(quote_arr)
+			content: ""
+		p
+			&.last
+				margin: 0
 	.about__author
+		padding-top: 10px
 	.about__authorinfo
 		+clr
 	.about__authorpic
