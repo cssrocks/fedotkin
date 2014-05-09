@@ -1414,6 +1414,8 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 @media print { .hidden-print { display: none !important; } }
 body { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.42857; color: black; background-color: white; padding-top: 52px; }
 
+ul, ol { list-style-type: none; margin: 0; padding: 0; }
+
 .header { background: url("../img/head_bg.jpg") no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .header .container { position: relative; padding-top: 60px; padding-bottom: 35px; min-height: 520px; }
 .header .header__person { position: absolute; bottom: 0; right: -100px; width: 720px; height: 520px; background: url("../img/person.png") no-repeat 0 0; }
