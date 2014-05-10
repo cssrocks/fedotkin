@@ -2,6 +2,20 @@ head.ready(function() {
 
 	console.log("These aren't the droids you're looking for!");
 
+	$('.request__formfield-trigger').on('click', function() {
+		$(this).parent().find('.form-group').slideToggle('fast');
+		$('#website').text(function(_,txt) {
+        var ret='';
+
+        if ( txt == 'У меня нет сайта' ) {
+           ret = 'У меня есть сайт';
+        }else{
+           ret = 'У меня нет сайта';
+        }
+        return ret;
+    });
+	});
+
 	// YouTube API
 	var embed = 0;
 	function addEmbeded(object, videoId, width, height, autoplay) {
@@ -31,7 +45,7 @@ head.ready(function() {
 
 
 	// Navigation
-	$('.js-navbar a').on('click',function (e) {
+	$('.js-nav a').on('click',function (e) {
 		e.preventDefault();
 
 		var target = this.hash,
@@ -50,11 +64,11 @@ head.ready(function() {
 			var id = $(this).attr('id');
 			var top = ($('.page').offset().top - 53);
 			if( $(window).scrollTop() >= (pos - 52)){
-				$('.js-navbar li').removeClass('active');
+				$('.js-nav li').removeClass('active');
 				$('[href = #'+id+']').parent().addClass('active');
 			}
 			if($(window).scrollTop() < top){
-				$('.js-navbar li').removeClass('active');
+				$('.js-nav li').removeClass('active');
 			}
 		});
 	}

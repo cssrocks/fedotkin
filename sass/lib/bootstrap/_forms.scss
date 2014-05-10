@@ -113,6 +113,7 @@ output {
 // input[type="color"]
 
 .form-control {
+  outline: none;
   display: block;
   width: 100%;
   height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
@@ -122,13 +123,15 @@ output {
   color: $input-color;
   background-color: $input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid $input-border;
+  border: 2px solid $input-border;
   border-radius: $input-border-radius;
-  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  // @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 
   // Customize the `:focus` state to imitate native WebKit styles.
   @include form-control-focus();
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 
   // Placeholder
   @include placeholder();
@@ -321,6 +324,13 @@ input[type="checkbox"],
 }
 .has-error {
   @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+  .form-control {
+    border-color: #e7001d;
+    color: #e7001d;
+    &:focus {
+      border-color: #e7001d;
+    }
+  }
 }
 
 

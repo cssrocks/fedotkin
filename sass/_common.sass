@@ -14,6 +14,93 @@ ol
 	margin: 0
 	padding: 0
 
+// Menu
+// --------------------------------------------------
+.menu
+	li
+		float: left
+		border-left: 1px solid #c9c9c9
+		&:first-child
+			border-left: none
+		&.active
+			a
+				background: #ffb43e
+				color: #fff
+				&:hover
+					color: #fff
+					span
+						border-color: #fff
+				span
+					border-color: #fff
+		a
+			display: block
+			height: 52px
+			line-height: 44px
+			font-size: 16px
+			text-decoration: none
+			padding: 0 30px
+			color: #000
+			&:hover
+				color: #ffb943
+				span
+					border-bottom: 1px dotted #ffb943
+			span
+				display: inline-block
+				vertical-align: middle
+				line-height: 1
+				border-bottom: 1px dotted #000
+		&.menu__btn
+			a
+				background: #fff
+			span
+				margin-top: -2px
+				color: #fff
+				padding: 9px 12px
+				border-color: transparent
+				border: 1px solid #ff911c
+				@include border-radius(10px)
+				@include background-clip(padding-box)
+				background-color: #f7c11f
+				@include box-shadow(0 2px 4px 0 rgba(71,46,2,.67), inset 0 0 14px rgba(255,192,0,.13))
+				@include background-image(linear-gradient(top, rgba(243,207,91,.4) 0%, rgba(255,120,20,.4) 99.51%, rgba(255,120,20,.4) 100%))
+			em
+				border-bottom: 1px dotted #fff
+				font-weight: normal
+				font-style: normal
+			&:hover
+				span
+					color: #fff
+					border: 1px solid #ff911c
+					@include border-radius(10px)
+					@include background-clip(padding-box)
+					background-color: #f7c11f
+					@include box-shadow(0 2px 4px 0 rgba(71,46,2,.67), inset 0 8px 18px rgba(255,255,255,.76), inset 0 0 14px rgba(255,192,0,.13))
+					@include background-image(linear-gradient(top, rgba(243,207,91,.4) 0%, rgba(255,120,20,.4) 99.51%, rgba(255,120,20,.4) 100%))
+
+					em
+						border-color: #fff
+			&:active
+				span
+					border: 1px solid #ff911c
+					@include border-radius(10px)
+					@include background-clip(padding-box)
+					background-color: #ecb204
+					@include box-shadow(0 1px 3px 0 rgba(71,46,2,.67), inset 0 4px 9px rgba(170,109,0,.76), inset 0 0 14px rgba(255,192,0,.13))
+					@include background-image(linear-gradient(top, rgba(243,207,91,.4) 0%, rgba(255,120,20,.4) 99.51%, rgba(255,120,20,.4) 100%))
+			&.active
+				&:hover
+					span
+						border-color: transparent
+				a
+					background-color: #fff
+					span
+						color: #2692e5
+						@include border-radius(0)
+						background: none
+						@include box-shadow(none)
+						em
+							border-bottom: 1px dotted #2692e5
+
 // Header
 // --------------------------------------------------
 .header
@@ -113,6 +200,13 @@ ol
 		> .container
 			padding-bottom: 0
 			border: none
+	&.section_testimonials
+		> .container
+			border-bottom: none
+	&.section_gifts
+		> .container
+			padding-top: 0
+			border-bottom: none
 
 // About
 // --------------------------------------------------
@@ -316,4 +410,111 @@ ol
 				margin-top: -28px
 		p
 			margin-bottom: 0
+
+.btn-row
+	display: inline-block
+	@include border-radius(12px)
+	padding: 14px
+	background: rgba(#fff, .1)
+
+.btn
+	font-family: $font-family-br
+	line-height: 28px
+	font-size: 26px
+	font-weight: normal
+	padding: 24px 43px
+	text-decoration: none
+	+font-smoothing
+	&:hover
+		text-decoration: none
+
+.btn-primary
+	color: #fff
+	outline: none
+	border: 2px solid #0c6fd1
+	text-shadow: 1px 2px 0 rgba(#000, .3)
+	@include border-radius(12px)
+	@include background-clip(padding-box)
+	background-color: #318feb
+	@include box-shadow(0 4px 8px 0 rgba(0,38,76,.71), inset 0 0 14px rgba(33,111,189,.13))
+	@include background-image(linear-gradient(bottom, rgba(50,143,235,.31) 0%, rgba(255,255,255,.31) 99.51%, rgba(255,255,255,.31) 100%))
+	&:hover
+		color: #fff
+		border: 2px solid #0c6fd1
+		@include border-radius(12px)
+		@include background-clip(padding-box)
+		background-color: #318feb
+		@include box-shadow(0 4px 8px 0 rgba(0,38,76,.71), inset 0 6px 21px rgba(255,255,255,.75), inset 0 0 14px rgba(33,111,189,.13))
+		@include background-image(linear-gradient(bottom, rgba(50,143,235,.31) 0%, rgba(255,255,255,.31) 99.51%, rgba(255,255,255,.31) 100%))
+	&:active
+		color: #9fc6ea
+		border: 2px solid #0c6fd1
+		@include border-radius(12px)
+		@include background-clip(padding-box)
+		background-color: #0c69c6
+		@include box-shadow(0 2px 4px 0 rgba(0,38,76,.71), inset 0 4px 8px rgba(0,68,136,.78), inset 0 0 14px rgba(33,111,189,.13))
+		@include background-image(linear-gradient(bottom, rgba(50,143,235,.31) 0%, rgba(255,255,255,.31) 99.51%, rgba(255,255,255,.31) 100%))
+
+.btn-default
+	padding: 8px 30px
+	font-size: 16px
+	font-family: $font-family-base
+	border: 2px solid #c9c9c9
+	+border-radius(10px)
+	background: #fff
+	span
+		display: inline-block
+		color: #282828
+		border-bottom: 1px dotted #282828
+		line-height: 1
+	&:hover
+		background: #2791e5
+		span
+			color: #fff
+			border-color: #fff
+.form-group
+	position: relative
+.error-help
+	display: none
+	position: absolute
+	left: 100%
+	bottom: 50%
+	margin-bottom: -43px
+	background: #fff
+	white-space: nowrap
+	padding: 10px 12px
+	+border-radius(10px)
+	margin-left: 20px
+	z-index: 1
+	font-size: 14px
+	font-family: Arial, "Helvetica Neue", Helvetica,  sans-serif
+	.has-error &
+		display: block
+	&:before
+		position: absolute
+		top: 50%
+		margin-top: -8px
+		right: 100%
+		+arr(10, 16, #fff, l)
+		content: ""
+	p
+		margin-bottom: 0
+
+.request__formfield
+	.form-group
+		display: none
+	.request__formfield-trigger
+		display: inline-block
+		font-size: 18px
+		color: #000
+		cursor: pointer
+		border-bottom: 1px dotted #000
+		line-height: 1
+		margin-bottom: 15px
+		+nosel
+		&:hover
+			color: #4593ce
+			border-color: transparent
+
+
 
