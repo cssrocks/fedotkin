@@ -202,19 +202,35 @@ ol
 .video
 	position: relative
 	margin-top: 50px
-	.video__viewport
+	.image
+		display: block
+		&.embeded
+			.video__play
+				display: none
 		img
 			display: block
 			+border-radius(25px)
 	.video__play
-		+s(play)
-		cursor: pointer
 		position: absolute
-		top: 50%
-		margin-top: -41px
-		left: 50%
-		margin-left: -58px
-		z-index: 1
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(#000, .2)
+		+border-radius(25px)
+		+transition(.3s)
+		&:hover
+			background: rgba(#000, .0)
+		&:before
+			+s(play)
+			cursor: pointer
+			position: absolute
+			top: 50%
+			margin-top: -41px
+			left: 50%
+			margin-left: -58px
+			z-index: 1
+			content: ""
 
 // Testimonials
 // --------------------------------------------------
