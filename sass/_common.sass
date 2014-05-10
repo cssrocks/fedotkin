@@ -34,7 +34,6 @@ ol
 			background: url(../img/person.png) no-repeat 0 0
 	.h1
 		margin-bottom: 20px
-
 .intro
 	position: relative
 	margin-right: 170px
@@ -54,26 +53,15 @@ ol
 		font-size: 18px
 		font-family: $font-family-base
 		font-weight: 500
-	.footer__likes
-		padding-top: 20px
-		margin-top: 20px
-		border-top: 1px solid #868686
-	// .footer__share-title
-	// 	display: inline-block
-	// 	margin-right: 10px
 	.footer__telnum
 		display: block
 		font-size: 30px
 		font-family: $font-family-base
 		font-weight: 500
-	.social-likes
-		margin-left: 10px
-
-// social
-.social
-	ul
+	.footer__social
+	.footer__sociallist
 		font-size: 0
-	li
+	.footer__socialitem
 		display: inline-block
 		text-align: center
 		margin: 0
@@ -86,21 +74,27 @@ ol
 		margin-left: 10px
 		&:first-child
 			margin-left: 0
+		&.footer__socialitem_yt
+			&:hover
+				color: #e6001f
+		&.footer__socialitem_fb
+			&:hover
+				color: #365895
+		&.footer__socialitem_vk
+			&:hover
+				color: #457698
+		&.footer__socialitem_tw
+			&:hover
+				color: #00ace9
 		a
 			color: inherit
 			text-decoration: none
-		&._youtube
-			&:hover
-				color: #e6001f
-		&._facebook
-			&:hover
-				color: #365895
-		&._vk
-			&:hover
-				color: #457698
-		&._twitter
-			&:hover
-				color: #00ace9
+	.footer__likes
+		padding-top: 20px
+		margin-top: 20px
+		border-top: 1px solid #868686
+		.social-likes
+			margin-left: 10px
 
 // Common blocks
 // --------------------------------------------------
@@ -156,7 +150,6 @@ ol
 			margin-bottom: 0
 		p
 			margin-bottom: 0
-
 // Why
 .why
 	position: relative
@@ -174,7 +167,10 @@ ol
 // --------------------------------------------------
 .skills
 	text-align: center
-	.skills__i
+	> .container
+		border-bottom: none
+		padding-bottom: 0
+	.skills__item
 		position: relative
 		padding-top: 80px
 		&:before
@@ -183,33 +179,34 @@ ol
 			left: 50%
 			margin-left: -40px
 			content: ""
-		&._1
+		&.skills__item_1
 			&:before
 				+s(skill_1)
-		&._2
+		&.skills__item_2
 			&:before
 				+s(skill_2)
-		&._3
+		&.skills__item_3
 			&:before
 				+s(skill_3)
-		&._4
+		&.skills__item_4
 			&:before
 				+s(skill_4)
 		p
 			margin-bottom: 0
-
 // Video
 .video
-	position: relative
-	margin-top: 50px
-	.image
-		display: block
-		&.embeded
-			.video__play
-				display: none
-		img
+	// padding-top: 50px
+	// border-top: none
+	.video__viewport
+		position: relative
+		.image
 			display: block
-			+border-radius(25px)
+			&.embeded
+				.video__play
+					display: none
+			img
+				display: block
+				+border-radius(25px)
 	.video__play
 		position: absolute
 		top: 0
@@ -237,7 +234,6 @@ ol
 .testimonials
 	.testimonials__moar
 		text-align: center
-
 .testimonial
 	margin-bottom: 70px
 	p
@@ -292,7 +288,7 @@ ol
 // Gifts
 // --------------------------------------------------
 .gifts
-	.gifts__i
+	.gifts__item
 		position: relative
 		padding: 30px 40px 30px 130px
 		+box-shadow(0 0 10px rgba(#000,.3))
@@ -302,12 +298,12 @@ ol
 			position: absolute
 			top: 50%
 			content: ""
-		&._1
+		&.gifts__item_1
 			&:before
 				+s(gift_1)
 				left: 25px
 				margin-top: -30px
-		&._2
+		&.gifts__item_2
 			&:before
 				+s(gift_2)
 				left: 32px
