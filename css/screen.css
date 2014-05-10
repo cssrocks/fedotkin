@@ -1423,9 +1423,8 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .header > .container { position: relative; padding-top: 60px; padding-bottom: 35px; min-height: 520px; }
 .header > .container:before { position: absolute; bottom: 0; right: -100px; width: 720px; height: 520px; background: url(../img/person.png) no-repeat 0 0; }
 .header .h1 { margin-bottom: 20px; }
-
-.intro { position: relative; margin-right: 170px; font-size: 20px; }
-.intro .lead { font-family: "Bitter Italic", "Times New Roman", Times, serif; }
+.header .header__intro { position: relative; margin-right: 170px; font-size: 20px; }
+.header .header__intro .lead { font-family: "Bitter Italic", "Times New Roman", Times, serif; }
 
 .footer { margin: 20px 0; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 300; }
 .footer .h3 { margin-bottom: 15px; font-size: 18px; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; }
@@ -1442,8 +1441,9 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .footer .footer__likes .social-likes { margin-left: 10px; }
 
 .section > .container { padding-top: 45px; padding-bottom: 45px; border-bottom: 1px solid #5e5e5e; }
-.section.request { background: url(../img/pttrn.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; margin-top: -1px; }
-.section.request > .container { border: none; }
+.section.section_request { background: url(../img/pttrn.jpg) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; margin-top: -1px; }
+.section.section_request > .container { border: none; }
+.section.section_skills > .container { padding-bottom: 0; border: none; }
 
 .about .about__quote { position: relative; font-weight: 300; font-style: italic; border: 3px solid #c9c9c9; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; padding: 20px 18px; }
 .about .about__quote:before { position: absolute; top: 35px; left: 100%; content: ""; background: url('../img/icons-s2505740255.png') 0 -597px no-repeat; width: 25px; height: 29px; }
@@ -1478,6 +1478,7 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .video .video__play:hover { background: rgba(0, 0, 0, 0); }
 .video .video__play:before { background: url('../img/icons-s2505740255.png') 0 -239px no-repeat; width: 117px; height: 83px; cursor: pointer; position: absolute; top: 50%; margin-top: -41px; left: 50%; margin-left: -58px; z-index: 1; content: ""; }
 
+.testimonials { margin-bottom: 50px; }
 .testimonials .testimonials__moar { text-align: center; }
 
 .testimonial { margin-bottom: 70px; }

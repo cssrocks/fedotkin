@@ -34,12 +34,12 @@ ol
 			background: url(../img/person.png) no-repeat 0 0
 	.h1
 		margin-bottom: 20px
-.intro
-	position: relative
-	margin-right: 170px
-	font-size: 20px
-	.lead
-		font-family: $font-family-bi
+	.header__intro
+		position: relative
+		margin-right: 170px
+		font-size: 20px
+		.lead
+			font-family: $font-family-bi
 
 // Footer
 // --------------------------------------------------
@@ -103,11 +103,15 @@ ol
 		padding-top: 45px
 		padding-bottom: 45px
 		border-bottom: 1px solid #5e5e5e
-	&.request
+	&.section_request
 		background: url(../img/pttrn.jpg) no-repeat
 		+cover
 		margin-top: -1px
 		> .container
+			border: none
+	&.section_skills
+		> .container
+			padding-bottom: 0
 			border: none
 
 // About
@@ -232,6 +236,7 @@ ol
 // Testimonials
 // --------------------------------------------------
 .testimonials
+	margin-bottom: 50px
 	.testimonials__moar
 		text-align: center
 .testimonial
@@ -260,6 +265,7 @@ ol
 
 // Request
 // --------------------------------------------------
+
 // Bonus
 .bonus
 	position: relative

@@ -13,7 +13,7 @@ head.ready(function() {
 		embed+=1;
 	}
 
-	// VIDEO
+	// Video
 	$(".embeded").each(function() {
 		if (!$(this).attr("data-autoplay")) {
 			$(this).attr("data-autoplay", 'false');
@@ -30,7 +30,7 @@ head.ready(function() {
 	});
 
 
-	// NAVIGATION
+	// Navigation
 	$('.js-navbar a').on('click',function (e) {
 		e.preventDefault();
 
