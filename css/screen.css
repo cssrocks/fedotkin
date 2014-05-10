@@ -1453,7 +1453,7 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .about .about__authorinfo { *zoom: 1; margin-bottom: 15px; }
 .about .about__authorinfo:after { content: " "; display: table; clear: both; }
 .about .about__authorpic { width: 100px; float: left; margin-right: 20px; }
-.about .about__authorpic img { display: block; }
+.about .about__authorpic img { display: block; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
 .about .about__authormeta { overflow: hidden; }
 .about .about__authormeta h3 { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 500; margin-bottom: 0; }
 .about .about__authormeta p { margin-bottom: 0; }
@@ -1482,7 +1482,7 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .testimonial .testimonial__author { *zoom: 1; margin-top: 20px; font-weight: 400; }
 .testimonial .testimonial__author:after { content: " "; display: table; clear: both; }
 .testimonial .testimonial__authorpic { display: inline-block; vertical-align: middle; width: 60px; margin-right: 20px; }
-.testimonial .testimonial__authorpic img { width: 60px; height: 60px; display: block; }
+.testimonial .testimonial__authorpic img { width: 60px; height: 60px; display: block; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 .testimonial .testimonial__authorname { display: inline-block; vertical-align: middle; }
 
 .bonus { position: relative; background: #ffb43e; padding: 30px 190px 30px 25px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; overflow: hidden; min-height: 183px; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); margin-top: 30px; }
