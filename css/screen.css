@@ -1434,7 +1434,7 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .footer .footer__socialitem.footer__socialitem_vk:hover { color: #457698; }
 .footer .footer__socialitem.footer__socialitem_tw:hover { color: #00ace9; }
 .footer .footer__socialitem a { color: inherit; text-decoration: none; }
-.footer .footer__likes { padding-top: 23px; margin-top: 13px; border-top: 1px solid #868686; font-size: 18px; }
+.footer .footer__likes { padding-top: 23px; margin-top: 13px; border-top: 1px solid #868686; font-size: 18px; font-weight: 400; }
 .footer .footer__likes .social-likes { margin-left: 7px; margin-top: -5px; }
 .footer .footer__mail { font-size: 16px; font-weight: 300; }
 .footer .footer__mail i { display: inline-block; vertical-align: middle; background: url('../img/icons-sb1c6d58ff9.png') 0 -699px no-repeat; width: 15px; height: 12px; }
