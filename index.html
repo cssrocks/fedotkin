@@ -209,8 +209,43 @@
 							</article>
 						</div>
 					</div>
+					<div class="row is-hidden">
+						<div class="col-md-4">
+							<article class="testimonial">
+								<p><strong>Действительно классно!</strong> Уважаемые авторы! Ребята! Спасибо! Действительно классно! Доходчиво, понятно, полезно. Пришло понимание, что главное в этом бизнесе. Благодарю! Все важные мысли в книге цветными маркерами выделил :)</p>
+								<div class="testimonial__author">
+									<div class="testimonial__authorpic">
+										<img src="img/user_4.jpg" alt="Семен Венедиктов">
+									</div>
+									<div class="testimonial__authorname">Семен Венедиктов</div>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4">
+							<article class="testimonial">
+								<p><strong>Авторам спасибо! </strong> Огромное спасибо за отличную книгу! Масса полезной информации!</p>
+								<div class="testimonial__author">
+									<div class="testimonial__authorpic">
+										<img src="img/user_5.jpg" alt="Павел Скрипин">
+									</div>
+									<div class="testimonial__authorname">Павел Скрипин</div>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4">
+							<article class="testimonial">
+								<p><strong>Материал очень нужный!</strong> Спасибо за книгу! Действительно прочла очень быстро, а главное, что читать было интересно! Материал очень нужный, еще раз огромное спасибо!</p>
+								<div class="testimonial__author">
+									<div class="testimonial__authorpic">
+										<img src="img/user_6.jpg" alt="Нинон Павлова">
+									</div>
+									<div class="testimonial__authorname">Нинон Павлова</div>
+								</div>
+							</article>
+						</div>
+					</div>
 					<div class="testimonials__moar">
-						<a href="#" class="btn btn-default"><span>Показать еще отзывы</span></a>
+						<a href="#" class="btn btn-default js-testimonials"><span>Показать еще отзывы</span></a>
 					</div>
 				</div>
 				<!-- /.testimonials -->
@@ -255,14 +290,14 @@
 					<div class="row">
 						<div class="col-md-5">
 							<div class="request__form">
-								<form action="#" role="form">
+								<form action="#0" role="form" class="rf">
 									<div class="form-group">
 										<label for="name">Как к вам обращаться?</label>
-										<input type="text" class="form-control" id="name" placeholder="">
+										<input type="text" class="form-control rj" id="name" placeholder="">
 									</div>
-									<div class="form-group has-error1">
+									<div class="form-group">
 										<label for="email">Электронная почта</label>
-										<input type="email" class="form-control" id="email" placeholder="" value="">
+										<input type="text" class="form-control rj" id="email" placeholder="" value="">
 										<div class="error-help">
 											<p>Это не адрес почты</p>
 											<p>Должно быть похоже на user@mail.com</p>
@@ -270,16 +305,16 @@
 									</div>
 									<div class="form-group">
 										<label for="role">Ваша роль в бизнесе</label>
-										<input type="text" class="form-control" id="role" placeholder="">
+										<input type="text" class="form-control rj" id="role" placeholder="">
 									</div>
 									<div class="request__formfield">
 										<div id="website" class="request__formfield-trigger">У меня есть сайт</div>
 										<div class="form-group">
 											<label for="role">Адрес сайта</label>
-											<input type="text" class="form-control" id="role" placeholder="">
+											<input type="text" class="form-control" id="site" placeholder="">
 										</div>
 									</div>
-									<button type="submit" class="btn btn-primary">Получить материалы</button>
+									<button type="submit" class="btn btn-primary btn_submit disabled">Получить материалы</button>
 								</form>
 							</div>
 							<!-- /.request__form -->
@@ -294,6 +329,11 @@
 					</div>
 				</div>
 				<!-- /.request -->
+				<div class="requestsuccess">
+					<h2 class="h2"><i></i>Спасибо! Ваша заявка отправлена</h2>
+					<p>Мы выслали вам письмо с инструкциями по получению материалов и бонусов.</p>
+					<p><a href="#" class="requestagain">Отправить еще раз</a></p>
+				</div>
 			</div>
 			<!-- /.container -->
 		</section>

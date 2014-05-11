@@ -63,6 +63,7 @@ ol
 				background-color: #f7c11f
 				@include box-shadow(0 2px 4px 0 rgba(71,46,2,.67), inset 0 0 14px rgba(255,192,0,.13))
 				@include background-image(linear-gradient(top, rgba(243,207,91,.4) 0%, rgba(255,120,20,.4) 99.51%, rgba(255,120,20,.4) 100%))
+				+transition(all .1s linear)
 			em
 				border-bottom: 1px dotted #fff
 				font-weight: normal
@@ -91,11 +92,12 @@ ol
 				&:hover
 					span
 						border-color: transparent
+						@include border-radius(10px)
 				a
 					background-color: #fff
 					span
 						color: #2692e5
-						@include border-radius(0)
+						@include border-radius(10px)
 						background: none
 						@include box-shadow(none)
 						em
@@ -331,6 +333,8 @@ ol
 // --------------------------------------------------
 .testimonials
 	margin-bottom: 50px
+	.is-hidden
+		display: none
 	.testimonials__moar
 		text-align: center
 .testimonial
@@ -515,6 +519,24 @@ ol
 		&:hover
 			color: #4593ce
 			border-color: transparent
+
+.requestsuccess
+	.h2
+		i
+			display: inline-block
+			vertical-align: middle
+			+s(request)
+	.requestagain
+		color: #000
+		text-decoration: none
+		border-bottom: 1px dotted #000
+		&:hover
+			border-bottom: 1px dotted transparent
+
+
+
+
+
 
 
 

@@ -1,19 +1,104 @@
 head.ready(function() {
 
 	console.log("These aren't the droids you're looking for!");
+	// $('.rf').each(function(){
+	// 		// Объявляем переменные (форма и кнопка отправки)
+	// 	var form = $(this),
+	// 			btn = form.find('.btn_submit');
+	// 	function checkInput(){
+	// 		form.find('.form-control').each(function(){
+	// 			if($(this).val() != ''){
+	// 				// Если поле не пустое удаляем класс-указание
+	// 				$(this).parent().removeClass('has-error');
+	// 			} else {
+	// 					// Если поле пустое добавляем класс-указание
+	// 				$(this).parent().addClass('has-error');
+	// 			}
+	// 		});
+	// 	}
+
+	// });
+$('.requestsuccess').hide();
+$(function() {
+
+  $('.rf').each(function(){
+	var form = $(this),
+        btn = form.find('.btn_submit');
+
+		// form.find('.rj').parent().addClass('has-error');
+    function checkInput(){
+      form.find('.rj').each(function(){
+				if($(this).val() != ''){
+					$(this).parent().removeClass('has-reject');
+					$(this).parent().removeClass('has-error');
+        } else {
+					$(this).parent().addClass('has-reject');
+        }
+      });
+    }
+
+    function lightEmpty(){
+      form.find('.has-reject').addClass('has-error');
+      // setTimeout(function(){
+      //   form.find('.has-reject').removeClass('has-error');
+      // },2000);
+    }
+
+    setInterval(function(){
+			checkInput();
+      var sizeEmpty = form.find('.has-reject').size();
+      if(sizeEmpty > 0){
+        if(btn.hasClass('disabled')){
+          return false;
+        } else {
+          btn.addClass('disabled');
+        }
+      } else {
+        btn.removeClass('disabled');
+      }
+    },500);
+
+    btn.click(function(){
+      if($(this).hasClass('disabled')){
+				lightEmpty();
+        return false;
+      } else {
+        form.submit();
+				$('.request').slideUp('fast');
+				$('.requestsuccess').slideDown();
+      }
+    });
+  });
+
+	$('.requestagain').on('click', function() {
+		$('.requestsuccess').slideUp('fast');
+		$('.request').slideDown();
+		return false;
+	});
+
+});
+
+
+
+
+	$('.js-testimonials').on('click', function() {
+		$('.js-testimonials').hide();
+		$(this).parent().parent().find('.row').slideDown('fast');
+		return false;
+	});
 
 	$('.request__formfield-trigger').on('click', function() {
 		$(this).parent().find('.form-group').slideToggle('fast');
 		$('#website').text(function(_,txt) {
-        var ret='';
+				var ret='';
 
-        if ( txt == 'У меня нет сайта' ) {
-           ret = 'У меня есть сайт';
-        }else{
-           ret = 'У меня нет сайта';
-        }
-        return ret;
-    });
+				if ( txt == 'У меня нет сайта' ) {
+					 ret = 'У меня есть сайт';
+				}else{
+					 ret = 'У меня нет сайта';
+				}
+				return ret;
+		});
 	});
 
 	// YouTube API
