@@ -352,7 +352,7 @@ ol
 // Testimonials
 // --------------------------------------------------
 .testimonials
-	margin-bottom: 50px
+	// margin-bottom: 50px
 	.is-hidden
 		display: none
 	.testimonials__moar
@@ -618,8 +618,78 @@ ol
 				padding: 0
 
 
+.m-source
+	margin-top: 30px
+	a
+		color: #000
 
-
+.modal
+	.modal-dialog
+		width: 780px
+	&#modalEssential
+		.modal-dialog
+			width: 460px
+	.close
+		font-size: 51px
+		opacity: 0.5
+		&:hover
+			opacity: 0.7
+	.modal-title
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 32px
+	.modal-header
+		padding: 15px 28px 0
+		border-bottom: none
+	.modal-body
+		font-size: 16px
+		font-family: $font-family-base
+		font-weight: 300
+		padding: 15px 28px
+	h2
+		margin-top: 30px
+		font-size: 22px
+	h3
+		font-size: 18px
+		margin-bottom: 10px
+	ul
+		padding-left: 24px
+		li
+			position: relative
+			margin-bottom: 13px
+			&:before
+				position: absolute
+				top: 6px
+				right: 100%
+				+s(listarr)
+				content: ""
+				margin-right: 7px
+	ol
+		counter-reset: list1
+		padding-left: 50px
+		> li
+			font-size: 18px
+			font-family: $font-family-br
+		li
+			position: relative
+			&:before
+				position: absolute
+				right: 100%
+				margin-right: 10px
+				display: inline-block
+				counter-increment: list1
+				content: counter(list1) "."
+		ol
+			counter-reset: list2
+			padding-left: 0
+			li
+				font-size: 16px
+				font-family: $font-family-base
+				font-weight: 300
+				margin-bottom: 20px
+				&:before
+					counter-increment: list2
+					content: counter(list1) "." counter(list2)
 
 
 
