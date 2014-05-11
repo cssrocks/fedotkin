@@ -44,14 +44,16 @@ head.ready(function() {
 	      }
 	    },500);
 
-	    btn.click(function(){
+	    btn.click(function(event){
 	      if($(this).hasClass('disabled')){
 					lightEmpty();
 	        return false;
 	      } else {
-	        form.submit();
 					$('.request').slideUp('fast');
 					$('.requestsuccess').slideDown();
+	        // form.submit();
+					// return false;
+					// event.stopPropagation();
 	      }
 	    });
 	  });
