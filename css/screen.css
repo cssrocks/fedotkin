@@ -1553,7 +1553,7 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .m-source a { color: black; }
 
 .modal .modal-dialog { width: 780px; }
-.modal#modalEssential .modal-dialog { width: 460px; }
+.modal#modalEssential .modal-dialog { width: 480px; }
 .modal .close { font-size: 51px; opacity: 0.5; }
 .modal .close:hover { opacity: 0.7; }
 .modal .modal-title { margin-top: 0; margin-bottom: 0; font-size: 32px; }
