@@ -1439,7 +1439,7 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 .footer .footer__mail { font-size: 16px; font-weight: 300; }
 .footer .footer__mail i { display: inline-block; vertical-align: middle; background: url('../img/icons-sb1c6d58ff9.png') 0 -699px no-repeat; width: 15px; height: 12px; }
 .footer .footer__mail a { color: black; text-decoration: underline; }
-.footer .footer__mail a:hover { text-decoration: none; }
+.footer .footer__mail a:hover { color: #ffb43e; text-decoration: none; }
 .footer .footer__docs { margin-left: 52px; }
 .footer .footer__docs .h3 { margin-bottom: 10px; }
 .footer .footer__docs li { margin-bottom: 11px; }
