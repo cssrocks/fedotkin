@@ -1557,7 +1557,7 @@ ul, ol { list-style-type: none; margin: 0; padding: 0; }
 
 .select { position: relative; height: 58px; line-height: 54px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: black; font-size: 22px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; border: 2px solid #cccccc; background-color: white; }
 .select:hover { cursor: pointer; }
-.select span { position: relative; display: block; padding: 0px 52px 0 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.select span { position: relative; display: block; padding: 0px 52px 0 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 .select span:before { position: absolute; top: 0; bottom: 0; right: 52px; width: 1px; background: #d4d4d4; content: ""; }
 .select span em { font-style: normal; }
 .select span i { position: absolute; right: 18px; top: 50%; margin-top: -4px; content: ""; background: url('../img/icons-sb1c6d58ff9.png') 0 -636px no-repeat; width: 17px; height: 10px; }
