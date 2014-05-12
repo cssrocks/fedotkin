@@ -229,16 +229,29 @@ ol
 // Common blocks
 // --------------------------------------------------
 .section
+	padding-top: 38px
 	> .container
 		padding-top: 38px
-		padding-bottom: 38px
-		border-bottom: 1px solid #5e5e5e
+		// padding-bottom: 38px
+		// border-bottom: 1px solid #5e5e5e
+	&.section_about
+		margin-top: -38px
 	&.section_request
+		position: relative
+		&:before
+			position: absolute
+			top: 0
+			right: 0
+			left: 0
+			height: 36px
+			background: #fff
+			content: ""
 		background: url(../img/pttrn.jpg) no-repeat
 		+cover
 		margin-top: -1px
 		> .container
 			border: none
+			// padding-top: 0
 			padding-bottom: 59px
 		.h2
 			margin-bottom: 20px
@@ -246,22 +259,34 @@ ol
 			margin-bottom: 19px
 	&.section_skills
 		> .container
-			padding-bottom: 0
-			border: none
+			border-top: 1px solid #5e5e5e
+			// margin-top: 38px
+			// padding-bottom: 0
+			// padding-top: 0
+			// border: none
 	&.section_testimonials
 		> .container
-			padding-top: 51px
-			padding-bottom: 51px
+			border-top: 1px solid #5e5e5e
+			// padding-top: 51px
+			// padding-bottom: 51px
 			// border-bottom: none
 	&.section_gifts
 		> .container
-			padding-top: 42px
-			padding-bottom: 82px
+			border-top: 1px solid #5e5e5e
+			// padding-top: 42px
+			// padding-bottom: 82px
+			// padding-bottom: 38px
+			padding-bottom: 10px
 			border-bottom: none
 	&.section_video
+		padding-top: 38px
 		> .container
-			padding-top: 48px
-			padding-bottom: 65px
+			padding-top: 38px
+			// padding-top: 48px
+			// padding-bottom: 65px
+
+// .title
+	// padding-top: 52px
 
 // About
 // --------------------------------------------------
@@ -369,7 +394,7 @@ ol
 			font-size: 19px
 // Video
 .video
-	// padding-top: 50px
+	// padding-top: 52px
 	// border-top: none
 	.video__viewport
 		position: relative
